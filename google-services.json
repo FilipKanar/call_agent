@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "905667621591",
+    "project_id": "call-agent-17d65",
+    "storage_bucket": "call-agent-17d65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905667621591:android:9da73fcaab7cc79d7bf692",
+        "android_client_info": {
+          "package_name": "com.example.call_agent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905667621591-dgbu503rak2ilk2f047pobifjd7d97rk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.call_agent",
+            "certificate_hash": "88fd7487cc42bceb096649ac1ef497a3fe2e76d5"
+          }
+        },
+        {
+          "client_id": "905667621591-r69n5a24qvu36stb4bqq07cfpblptqhl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMbghnEzWyn5FJThRVWPk5j5xtmq-g35s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905667621591-r69n5a24qvu36stb4bqq07cfpblptqhl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
