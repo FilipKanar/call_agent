@@ -1,0 +1,6 @@
+{
+  "@@locale": "en",
+  "title": "Call Agent",
+  "email": "Email",
+  "emailHint" : "Provide email address"
+ }
