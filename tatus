@@ -1,0 +1,35 @@
+[33mcommit 352c25a821e8caad1a5ea037612d710d1346dfba[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/authentication_bloc[m[33m, [m[1;31morigin/develop[m[33m, [m[1;32mdevelop[m[33m)[m
+Author: Borsuk <antena309@gmail.com>
+Date:   Thu Nov 17 16:52:22 2022 +0100
+
+    Authentication service model, firebase service
+
+[33mcommit dc897efb4ec2ae7e75663c677364008dddbe5cfe[m
+Author: Borsuk <antena309@gmail.com>
+Date:   Wed Nov 16 22:42:31 2022 +0100
+
+    Initialize firebase
+
+[33mcommit 62477be82666812c9e358e7e23735a909b9a45f7[m
+Author: Borsuk <antena309@gmail.com>
+Date:   Wed Nov 16 19:37:31 2022 +0100
+
+    Intenationalization l10n
+
+[33mcommit a681ba44d18842ce68bba20eeccadc8b9c0b3a10[m
+Author: Borsuk <antena309@gmail.com>
+Date:   Wed Nov 16 18:53:50 2022 +0100
+
+    App theme
+
+[33mcommit 513c31746a5d2d5212e4cdf3bb162bf9515a5177[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Borsuk <antena309@gmail.com>
+Date:   Wed Nov 16 17:36:54 2022 +0100
+
+    Initial commit
+
+[33mcommit 65e6f92064a380b761228bf54deccbfb6d7dd57b[m[33m ([m[1;32mmaster[m[33m)[m
+Author: Borsuk <antena309@gmail.com>
+Date:   Wed Nov 16 17:35:22 2022 +0100
+
+    Initial commit
