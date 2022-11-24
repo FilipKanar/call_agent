@@ -17,7 +17,6 @@ class AuthenticationBloc
         emit(Authenticated());
       } on Exception catch (e) {
         emit(AuthenticationError(e.toString()));
-        //emit(UnAuthenticated());
       }
     });
     on<SignUpRequested>((event, emit) async {
@@ -27,7 +26,6 @@ class AuthenticationBloc
         emit(Authenticated());
       } catch (e) {
         emit(AuthenticationError(e.toString()));
-        //emit(UnAuthenticated());
       }
     });
     on<SignOutRequested>((event, emit) async {
