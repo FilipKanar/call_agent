@@ -1,4 +1,6 @@
 import 'package:call_agent/data/api/authentication_service.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_auth_mocks/firebase_auth_mocks.dart';
 
 class MockAuthenticationService implements AuthenticationService {
   @override
@@ -18,4 +20,9 @@ class MockAuthenticationService implements AuthenticationService {
   Future<void> signUp({required String email, required String password}) {
     return Future.value();
   }
+
+  @override
+  Stream<User?> currentUser() {
+    return MockFirebaseAuth(signedIn: true).onAuthStateChanged;
+}
 }

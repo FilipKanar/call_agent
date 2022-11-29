@@ -2,10 +2,16 @@ import 'package:call_agent/data/api/authentication_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 class FirebaseAuthenticationService implements AuthenticationService {
+
+  FirebaseAuth firebaseAuthInstance = FirebaseAuth.instance;
+
+  @override
+  Stream<User?> currentUser() => firebaseAuthInstance.authStateChanges();
+
   @override
   Future<void> signUp({required String email, required String password}) async {
     try{
-      await FirebaseAuth.instance
+      await firebaseAuthInstance
           .createUserWithEmailAndPassword(email: email, password: password);
     } on FirebaseAuthException catch (e) {
       if(e.code == 'weak-password') {
@@ -21,7 +27,7 @@ class FirebaseAuthenticationService implements AuthenticationService {
   @override
   Future<void> signOut() async {
     try{
-      FirebaseAuth.instance.signOut();
+      firebaseAuthInstance.signOut();
     }catch (e){
       throw Exception(e);
     }
@@ -30,7 +36,7 @@ class FirebaseAuthenticationService implements AuthenticationService {
   @override
   Future<void> signIn({required String email, required String password}) async {
     try{
-      await FirebaseAuth.instance.signInWithEmailAndPassword(email: email, password: password);
+      await firebaseAuthInstance.signInWithEmailAndPassword(email: email, password: password);
     }on FirebaseAuthException catch (e){
       if (e.code == 'user-not-found') {
         throw Exception('No user found for that email.');
@@ -44,6 +50,6 @@ class FirebaseAuthenticationService implements AuthenticationService {
 
   @override
   Future<String> getUserId() async {
-    return FirebaseAuth.instance.currentUser!.uid;
+    return firebaseAuthInstance.currentUser!.uid;
   }
 }

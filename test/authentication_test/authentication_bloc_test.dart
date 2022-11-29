@@ -26,7 +26,7 @@ void main() {
         build: () => authenticationBloc,
         act: (bloc) => bloc.add(SignUpRequested('', '')),
         expect: () => [Authenticated()]);
-    blocTest<AuthenticationBloc, AuthenticationState>('Sign In test',
+    blocTest<AuthenticationBloc, AuthenticationState>('Sign Out test',
         build: () => authenticationBloc,
         act: (bloc) => bloc.add(SignOutRequested()),
         expect: () => [UnAuthenticated()]);

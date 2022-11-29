@@ -8,29 +8,39 @@ class AuthenticationBloc
     extends Bloc<AuthenticationEvent, AuthenticationState> {
   final AuthenticationService authenticationService;
 
+  get service {
+    return authenticationService;
+  }
+
   AuthenticationBloc({required this.authenticationService})
       : super(UnAuthenticated()) {
-    on<SignInRequested>((event, emit) async {
-      try {
-        await authenticationService.signIn(
-            email: event.email, password: event.password);
-        emit(Authenticated());
-      } on Exception catch (e) {
-        emit(AuthenticationError(e.toString()));
-      }
-    });
-    on<SignUpRequested>((event, emit) async {
-      try {
-        await authenticationService.signUp(
-            email: event.email, password: event.password);
-        emit(Authenticated());
-      } catch (e) {
-        emit(AuthenticationError(e.toString()));
-      }
-    });
-    on<SignOutRequested>((event, emit) async {
-      await authenticationService.signOut();
-      emit(UnAuthenticated());
-    });
+    on<SignInRequested>(
+      (event, emit) async {
+        try {
+          await authenticationService.signIn(
+              email: event.email, password: event.password);
+          emit(Authenticated());
+        } on Exception catch (e) {
+          emit(AuthenticationError(e.toString()));
+        }
+      },
+    );
+    on<SignUpRequested>(
+      (event, emit) async {
+        try {
+          await authenticationService.signUp(
+              email: event.email, password: event.password);
+          emit(Authenticated());
+        } catch (e) {
+          emit(AuthenticationError(e.toString()));
+        }
+      },
+    );
+    on<SignOutRequested>(
+      (event, emit) async {
+        await authenticationService.signOut();
+        emit(UnAuthenticated());
+      },
+    );
   }
 }
