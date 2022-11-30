@@ -1,8 +1,8 @@
 import 'package:call_agent/theme/app_dimensions.dart';
-import 'package:call_agent/view/authentication/sign_screen_widgets/sign_form.dart';
+import 'package:call_agent/view/authentication/sign_screen/sign_form.dart';
 import 'package:flutter/material.dart';
 
-import 'sign_screen_widgets/display_logo.dart';
+import 'sign_screen/display_logo.dart';
 
 
 class SignScreen extends StatelessWidget {
