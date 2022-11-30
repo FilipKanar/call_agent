@@ -22,20 +22,24 @@ class MyApp extends StatelessWidget {
   // This view is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MultiRepositoryProvider(providers: CustomProviders.myRepositories,
-      child: MaterialApp(
-        theme: AppTheme.theme,
-        localizationsDelegates: const [
-          AppLocalizations.delegate,
-          GlobalMaterialLocalizations.delegate,
-          GlobalWidgetsLocalizations.delegate,
-          GlobalCupertinoLocalizations.delegate,
-        ],
-        supportedLocales: const [
-          Locale('en', ''),
-          Locale('pl', ''),
-        ],
-        home: const SafeArea(child: AuthenticationWrapper()),
+    return MultiRepositoryProvider(
+      providers: CustomProviders.repositories,
+      child: MultiBlocProvider(
+        providers: CustomProviders.blocs,
+        child: MaterialApp(
+          theme: AppTheme.theme,
+          localizationsDelegates: const [
+            AppLocalizations.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          supportedLocales: const [
+            Locale('en', ''),
+            Locale('pl', ''),
+          ],
+          home: const SafeArea(child: AuthenticationWrapper()),
+        ),
       ),
     );
   }
