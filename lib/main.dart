@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
   // This view is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MultiRepositoryProvider(providers: CustomProviders().myRepositories,
+    return MultiRepositoryProvider(providers: CustomProviders.myRepositories,
       child: MaterialApp(
         theme: AppTheme.theme,
         localizationsDelegates: const [
