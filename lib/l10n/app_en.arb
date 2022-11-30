@@ -2,5 +2,7 @@
   "@@locale": "en",
   "title": "Call Agent",
   "email": "Email",
-  "emailHint" : "Provide email address"
+  "emailHint" : "Provide email address",
+  "add" : "Add",
+  "addNewContact" : "Add New Contact"
  }

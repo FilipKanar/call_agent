@@ -1,5 +1,6 @@
 import 'package:call_agent/bloc/authentication/authentication_bloc.dart';
 import 'package:call_agent/view/authentication/sign_screen.dart';
+import 'package:call_agent/view/home/home_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -12,7 +13,7 @@ class AuthenticationWrapper extends StatelessWidget {
     return StreamBuilder<User?>(
         stream: BlocProvider.of<AuthenticationBloc>(context).authenticationService.currentUser(),
         builder: (context, snapshot) {
-          return snapshot.hasData ? Container() : const SignScreen();
+          return snapshot.hasData ? const HomeScreen() : const SignScreen();
         });
   }
 }
