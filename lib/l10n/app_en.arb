@@ -2,7 +2,15 @@
   "@@locale": "en",
   "title": "Call Agent",
   "email": "Email",
-  "emailHint" : "Provide email address",
-  "add" : "Add",
-  "addNewContact" : "Add New Contact"
+  "add": "Add",
+  "emailHint": "Email",
+  "password": "Password",
+  "passwordHint": "Password",
+  "signIn": "Sign In",
+  "signUp": "Sign Up",
+  "incorrectEmail": "Incorrect email",
+  "incorrectWebsite": "Incorrect website address",
+  "incorrectPhoneNumber": "Incorrect phone number",
+  "passwordRequirements": "Password must be at least 6 characters long",
+  "addNewContact": "Add New Contact"
  }

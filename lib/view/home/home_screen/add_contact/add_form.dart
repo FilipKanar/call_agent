@@ -15,14 +15,24 @@ class _AddFormState extends State<AddForm> {
       child: Column(
         children: [
           Text(AppLocalizations.of(context)!.addNewContact),
-          TextFormField(onChanged: (title) {},),
-          TextFormField(onChanged: (website) {},),
-          TextFormField(onChanged: (phone) {},),
-          TextFormField(onChanged: (description) {},),
+          TextFormField(
+            onChanged: (title) {},
+          ),
+          TextFormField(
+            onChanged: (website) {},
+          ),
+          TextFormField(
+            onChanged: (phone) {},
+          ),
+          TextFormField(
+            onChanged: (description) {},
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              ElevatedButton(onPressed: (){}, child: Text(AppLocalizations.of(context)!.add))
+              ElevatedButton(
+                  onPressed: () {},
+                  child: Text(AppLocalizations.of(context)!.add),),
             ],
           )
         ],
