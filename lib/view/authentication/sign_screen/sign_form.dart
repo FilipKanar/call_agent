@@ -42,8 +42,8 @@ class _SignFormState extends State<SignForm> {
                         error: emailSnapshot.hasError
                             ? emailSnapshot.error.toString()
                             : null,
-                        hint: AppLocalizations.of(context)!.emailHint,
-                        label: AppLocalizations.of(context)!.email,
+                        hint: AppLocalizations.of(context).emailHint,
+                        label: AppLocalizations.of(context).email,
                       ),
                     ),
                   ),
@@ -59,8 +59,8 @@ class _SignFormState extends State<SignForm> {
                         error: passwordSnapshot.hasError
                             ? passwordSnapshot.error.toString()
                             : null,
-                        hint: AppLocalizations.of(context)!.passwordHint,
-                        label: AppLocalizations.of(context)!.password,
+                        hint: AppLocalizations.of(context).passwordHint,
+                        label: AppLocalizations.of(context).password,
                       ),
                     ),
                   ),
@@ -89,7 +89,7 @@ class _SignFormState extends State<SignForm> {
                             )
                                 : null;
                           },
-                          child: Text(AppLocalizations.of(context)!.signUp),
+                          child: Text(AppLocalizations.of(context).signUp),
                         ),
                         ElevatedButton(
                           onPressed: () {
@@ -104,7 +104,7 @@ class _SignFormState extends State<SignForm> {
                                 : null;
                           },
 
-                          child: Text(AppLocalizations.of(context)!.signIn),
+                          child: Text(AppLocalizations.of(context).signIn),
                         ),
                       ],
                     ),

@@ -12,5 +12,19 @@
   "incorrectWebsite": "Incorrect website address",
   "incorrectPhoneNumber": "Incorrect phone number",
   "passwordRequirements": "Password must be at least 6 characters long",
-  "addNewContact": "Add New Contact"
+  "addNewContact": "Add New Contact",
+  "titleNameHint": "Enter title or name",
+  "titleName": "Title/Name",
+  "websiteHint": "Copy website address",
+  "website": "Website",
+  "phoneNumberHint": "Enter phone number",
+  "phoneNumber": "Phone",
+  "descriptionHint": "Provide description (optional)",
+  "description": "Description",
+  "addAndCall": "Add and call",
+  "justAdd": "Just add",
+  "addNewCall": "Add New Client",
+  "myClients": "My clients:",
+  "emptyMyClients": "Your clients list is empty",
+  "emptyTextField": "This field can not be empty"
  }

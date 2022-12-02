@@ -14,7 +14,7 @@ class _AddFormState extends State<AddForm> {
     return Form(
       child: Column(
         children: [
-          Text(AppLocalizations.of(context)!.addNewContact),
+          Text(AppLocalizations.of(context).addNewContact),
           TextFormField(
             onChanged: (title) {},
           ),
@@ -32,7 +32,7 @@ class _AddFormState extends State<AddForm> {
             children: [
               ElevatedButton(
                   onPressed: () {},
-                  child: Text(AppLocalizations.of(context)!.add),),
+                  child: Text(AppLocalizations.of(context).add),),
             ],
           )
         ],
